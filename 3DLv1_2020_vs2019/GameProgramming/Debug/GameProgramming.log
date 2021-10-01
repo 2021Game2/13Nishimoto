@@ -1,0 +1,8 @@
+﻿2021/09/21 12:50:59 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\keisuke\Desktop\00Anabuki-master\00Anabuki-master\3Dプログラミング基礎\3DLv1_2020_vs2019\GameProgramming\GameProgramming.vcxproj" (Build ターゲット)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets(64,5): error MSB8020: The build tools for v142 (Platform Toolset = 'v142') cannot be found. To build using the v142 build tools, please install v142 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Upgrade Solution...".
+     1>プロジェクト "C:\Users\keisuke\Desktop\00Anabuki-master\00Anabuki-master\3Dプログラミング基礎\3DLv1_2020_vs2019\GameProgramming\GameProgramming.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:00.11
