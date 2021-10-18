@@ -47,7 +47,7 @@ void CSceneGame::Init() {
 	//
 	mPlayer.mPosition = CVector(0.0f, 0.0f, -3.0f) * mBackGroundMatrix;
 	//mPlayer.mPosition = CVector(0.0f, 0.0f, -503.0f);
-	mPlayer.mRotation = CVector(0.0f, 180.0f, 0.0f);
+	mPlayer.mRotation = CVector(0.0f, 0.0f, 0.0f);
 
 	//敵機のインスタンス作成
 	new CEnemy(&mModelC5, CVector(0.0f, 10.0f, -100.0f)*mBackGroundMatrix, CVector(), CVector(0.1f, 0.1f, 0.1f));

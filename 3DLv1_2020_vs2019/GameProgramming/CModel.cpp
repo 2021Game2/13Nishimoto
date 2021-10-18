@@ -46,7 +46,7 @@ void CModel::Load(char *obj, char *mtl) {
 		//データを分割する
 		char str[4][64] = { "", "", "", "" };
 		//文字列からデータを4つ変数へ代入する
-		sscanf(buf, "%s %s %s %s", str[0], str[1], str[2], str[3]);
+		(void)sscanf(buf, "%s %s %s %s", str[0], str[1], str[2], str[3]);
 		//先頭がnewmtlの時、マテリアルを追加する
 		if (strcmp(str[0], "newmtl") == 0) {
 			CMaterial *pm = new CMaterial();
@@ -119,9 +119,9 @@ void CModel::Load(char *obj, char *mtl) {
 			//テクスチャマッピングの有無を判定
 			if (strstr(str[1], "//")) {
 				//頂点と法線の番号取得
-				sscanf(str[1], "%d//%d", &v[0], &n[0]);
-				sscanf(str[2], "%d//%d", &v[1], &n[1]);
-				sscanf(str[3], "%d//%d", &v[2], &n[2]);
+				(void)sscanf(str[1], "%d//%d", &v[0], &n[0]);
+				(void)sscanf(str[2], "%d//%d", &v[1], &n[1]);
+				(void)sscanf(str[3], "%d//%d", &v[2], &n[2]);
 				//三角形作成
 				CTriangle t;
 				t.SetVertex(vertex[v[0] - 1], vertex[v[1] - 1], vertex[v[2] - 1]);
