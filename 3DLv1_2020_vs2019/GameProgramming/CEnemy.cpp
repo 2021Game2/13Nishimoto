@@ -54,7 +54,7 @@ void CEnemy::Update() {
 	//行列を更新
 	CTransform::Update();
 	//位置を移動
-	mPosition = CVector(0.0f, 0.0f, 0.9f) * mMatrix;
+//	mPosition = CVector(0.0f, 0.0f, 0.9f) * mMatrix;
 }
 //衝突処理
 //Collision(コライダ1, コライダ2)

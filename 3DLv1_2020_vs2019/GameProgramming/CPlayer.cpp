@@ -28,6 +28,7 @@ CPlayer::CPlayer()
 	spThis = this;
 	//テクスチャファイルの読み込み（1行64列）
 	mText.LoadTexture("FontWhite.tga", 1, 64);
+	CTransform::Update();
 }
 
 //更新処理
@@ -44,11 +45,11 @@ void CPlayer::Update() {
 		mPosition.mX -= 0.1f;
 	}
 	//上矢印キー入力で前進
-	if (CKey::Push(VK_UP)) {
+//	if (CKey::Push(VK_UP)) {
 		//Z軸方向に1進んだ値を回転移動させる
 		//mPosition = CVector(0.0f, 0.0f, 1.0f) * mMatrix;
 		mPosition.mZ += 0.1f;
-	}
+//	}
 	//Sキー入力で上向き
 	if (CKey::Push('S')) {
 		//X軸の回転値を減算
