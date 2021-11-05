@@ -51,8 +51,13 @@ void CSceneGame::Init() {
 	mPlayer.mRotation = CVector(0.0f, 0.0f, 0.0f);
 
 	//敵機のインスタンス作成
-	new CEnemy(&mModelC5, CVector(0.0f, 10.0f, -100.0f)*mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
-	new CEnemy(&mModelC5, CVector(30.0f, 10.0f, 130.0f)*mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+	new CEnemy(&mCube, CVector(5.0f, -10.0f, 50.0f)*mBackGroundMatrix, CVector(), CVector(5.1f, 10.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f)*mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(-25.0f, -10.0f, 50.0f) * mBackGroundMatrix, CVector(), CVector(5.1f, 10.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+
 	//new CEnemy(&mModelC5, CVector(0.0f, 10.0f, -600.0f), CVector(), CVector(0.1f, 0.1f, 0.1f));
 	//new CEnemy(&mModelC5, CVector(30.0f, 10.0f, -630.0f), CVector(), CVector(0.1f, 0.1f, 0.1f));
 
