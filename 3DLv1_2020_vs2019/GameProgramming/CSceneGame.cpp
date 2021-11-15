@@ -51,12 +51,34 @@ void CSceneGame::Init() {
 	mPlayer.mRotation = CVector(0.0f, 0.0f, 0.0f);
 
 	//敵機のインスタンス作成
-	new CEnemy(&mCube, CVector(5.0f, -10.0f, 50.0f)*mBackGroundMatrix, CVector(), CVector(5.1f, 10.1f, 5.1f));
+	new CEnemy(&mCube, CVector(-35.0f, -10.0f, 50.0f)*mBackGroundMatrix, CVector(), CVector(5.1f, 100.1f,200.1f));
 	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f)*mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
-	new CEnemy(&mCube, CVector(-25.0f, -10.0f, 50.0f) * mBackGroundMatrix, CVector(), CVector(5.1f, 10.1f, 5.1f));
+	new CEnemy(&mCube, CVector(35.0f, -10.0f, 50.0f) * mBackGroundMatrix, CVector(), CVector(5.1f, 100.1f, 200.1f));
 	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
+
+	new CEnemy(&mCube, CVector(25.0f, -10.0f, 20.0f) * mBackGroundMatrix, CVector(), CVector(20.0f, 20.0f, 3.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(-25.0f, -10.0f, 20.0f) * mBackGroundMatrix, CVector(), CVector(20.0f, 20.0f, 3.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+
+	new CEnemy(&mCube, CVector(25.0f, -10.0f, 45.1f) * mBackGroundMatrix, CVector(), CVector(5.0f, 20.0f, 3.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(-25.0f, -10.0f, 45.1f) * mBackGroundMatrix, CVector(), CVector(35.0f, 20.0f, 3.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+
+	new CEnemy(&mCube, CVector(25.0f, -10.0f, 70.0f) * mBackGroundMatrix, CVector(), CVector(28.0f, 20.0f, 3.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(-25.0f, -10.0f, 70.0f) * mBackGroundMatrix, CVector(), CVector(12.0f, 20.0f, 3.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+	
+	
 
 	//new CEnemy(&mModelC5, CVector(0.0f, 10.0f, -600.0f), CVector(), CVector(0.1f, 0.1f, 0.1f));
 	//new CEnemy(&mModelC5, CVector(30.0f, 10.0f, -630.0f), CVector(), CVector(0.1f, 0.1f, 0.1f));
@@ -156,6 +178,9 @@ void CSceneGame::Update() {
 		CUtil::Start2D(-400, 400, -300, 300);
 		//描画色の設定（緑色の半透明）
 		glColor4f(239.0f / 256.0f, 175.0f / 256.0f, 0.0f, 1.0f);
+
+		//2000ミリ秒待機
+		Sleep(2000);
 
 		//文字列の描画
 		mText.DrawString("MISSION CLEAR", -200, 100, 16, 32);
