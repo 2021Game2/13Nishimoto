@@ -94,11 +94,13 @@ void CPlayer::Collision(CCollider *m, CCollider *o) {
 		if (o->mType == CCollider::ETRIANGLE) {
 			CVector adjust;//調整用ベクトル
 			//三角形と線分の衝突判定
-			CCollider::CollisionTriangleLine(o, m, &adjust);
-			//位置の更新(mPosition + adjust)
-			mPosition = mPosition - adjust * -1;
-			//行列の更新
-			CTransform::Update();
+			if (CCollider::CollisionTriangleLine(o, m, &adjust))
+			{
+				//位置の更新(mPosition + adjust)
+				mPosition = mPosition - adjust * -1;
+				//行列の更新
+				CTransform::Update();
+			}
 		}
 		break;
 	case CCollider::ESPHERE:

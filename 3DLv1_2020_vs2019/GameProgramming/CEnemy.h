@@ -4,6 +4,7 @@
 #include "CCharacter.h"
 //コライダクラスのインクルード
 #include "CCollider.h"
+#include "CColliderMesh.h"
 /*
 エネミークラス
 キャラクタクラスを継承
@@ -14,9 +15,10 @@ public:
 	int mHp;	//ヒットポイント
 
 	//コライダ
-	CCollider mCollider1;
-	CCollider mCollider2;
-	CCollider mCollider3;
+	CColliderMesh mColMesh;
+	//CCollider mCollider1;
+	//CCollider mCollider2;
+	//CCollider mCollider3;
 
 	//コンストラクタ
 	//CEnemy(モデル, 位置, 回転, 拡縮)

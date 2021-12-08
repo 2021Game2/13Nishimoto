@@ -12,10 +12,10 @@ int CEnemy::sCount = 0;	//インスタンス数
 //CEnemy(モデル, 位置, 回転, 拡縮)
 CEnemy::CEnemy(CModel *model, CVector position,
 	CVector rotation, CVector scale)
-: mCollider1(this, &mMatrix, CVector(0.0f, 5.0f, 0.0f), 0.8f)
+:/* mCollider1(this, &mMatrix, CVector(0.0f, 5.0f, 0.0f), 0.8f)
 , mCollider2(this, &mMatrix, CVector(0.0f, 5.0f, 20.0f), 0.8f)
-, mCollider3(this, &mMatrix, CVector(0.0f, 5.0f, -20.0f), 0.8f)
-, mHp(HP)
+, mCollider3(this, &mMatrix, CVector(0.0f, 5.0f, -20.0f), 0.8f)*/
+ mHp(HP)
 {
 	sCount++;
 
@@ -31,6 +31,9 @@ CEnemy::CEnemy(CModel *model, CVector position,
 	mPriority = 1;
 	CTaskManager::Get()->Remove(this); //削除して
 	CTaskManager::Get()->Add(this); //追加する
+	
+	CTransform::Update();
+	mColMesh.Set(this, &mMatrix, mpModel);
 }
 
 //更新処理
@@ -101,10 +104,10 @@ void CEnemy::Collision(CCollider *m, CCollider *o) {
 
 void CEnemy::TaskCollision()
 {
-	mCollider1.ChangePriority();
-	mCollider2.ChangePriority();
-	mCollider3.ChangePriority();
-	CCollisionManager::Get()->Collision(&mCollider1, COLLISIONRANGE);
-	CCollisionManager::Get()->Collision(&mCollider2, COLLISIONRANGE);
-	CCollisionManager::Get()->Collision(&mCollider3, COLLISIONRANGE);
+	//mCollider1.ChangePriority();
+	//mCollider2.ChangePriority();
+	//mCollider3.ChangePriority();
+	//CCollisionManager::Get()->Collision(&mCollider1, COLLISIONRANGE);
+	//CCollisionManager::Get()->Collision(&mCollider2, COLLISIONRANGE);
+	//CCollisionManager::Get()->Collision(&mCollider3, COLLISIONRANGE);
 }
