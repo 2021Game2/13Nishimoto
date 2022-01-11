@@ -46,29 +46,45 @@ void CSceneGame::Init() {
 	mPlayer.mpModel = &mModel;
 	mPlayer.mScale = CVector(0.1f, 0.1f, 0.1f);
 	//
-	mPlayer.mPosition = CVector(0.0f, 7.5f, -3.0f) * mBackGroundMatrix;
+	mPlayer.mPosition = CVector(0.0f, 7.5f, -190.0f) * mBackGroundMatrix;
 	//mPlayer.mPosition = CVector(0.0f, 0.0f, -503.0f);
 	mPlayer.mRotation = CVector(0.0f, 0.0f, 0.0f);
 
 	//敵機のインスタンス作成
-	new CEnemy(&mCube, CVector(-35.0f, -10.0f, 50.0f)*mBackGroundMatrix, CVector(), CVector(5.1f, 100.1f,200.1f));
+	new CEnemy(&mCube, CVector(-35.0f, -10.0f, 50.0f)*mBackGroundMatrix, CVector(), CVector(5.1f, 100.1f,240.1f));
 	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f)*mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
-	new CEnemy(&mCube, CVector(35.0f, -10.0f, 50.0f) * mBackGroundMatrix, CVector(), CVector(5.1f, 100.1f, 200.1f));
+	new CEnemy(&mCube, CVector(35.0f, -10.0f, 50.0f) * mBackGroundMatrix, CVector(), CVector(5.1f, 100.1f, 240.1f));
 	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
-	new CEnemy(&mCube, CVector(1.0f, -1.0f, 50.0f) * mBackGroundMatrix, CVector(), CVector(30.1f, 1.1f, 200.1f));
+	new CEnemy(&mCube, CVector(1.0f, -1.0f, 50.1f) * mBackGroundMatrix, CVector(), CVector(32.1f, 1.1f, 240.1f));
 	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
 
 
-	new CEnemy(&mCube, CVector(-17.1f, 3.1f, 30.0f) * mBackGroundMatrix, CVector(), CVector(12.1f, 3.1f, 5.1f));
+	new CEnemy(&mCube, CVector(-18.1f, 1.1f, -130.0f) * mBackGroundMatrix, CVector(), CVector(12.1f, 5.1f, 5.1f));
 	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
-	new CEnemy(&mCube, CVector(17.1f, 3.1f, 30.0f) * mBackGroundMatrix, CVector(), CVector(12.1f, 3.1f, 5.1f));
+	new CEnemy(&mCube, CVector(18.1f, 1.1f, -130.0f) * mBackGroundMatrix, CVector(), CVector(12.1f, 5.1f, 5.1f));
 	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
-	new CEnemy(&mCube, CVector(1.0f, 9.1f, 30.0f) * mBackGroundMatrix, CVector(), CVector(5.1f, 3.1f, 5.1f));
+	new CEnemy(&mCube, CVector(1.0f, 11.1f, -130.0f) * mBackGroundMatrix, CVector(), CVector(32.1f, 15.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+
+
+	new CEnemy(&mCube, CVector(-18.1f, 1.1f, -80.0f) * mBackGroundMatrix, CVector(), CVector(34.1f, 5.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(-18.1f, 11.1f, -80.0f) * mBackGroundMatrix, CVector(), CVector(50.1f, 10.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+
+
+	new CEnemy(&mCube, CVector(18.1f, 1.1f, -20.0f) * mBackGroundMatrix, CVector(), CVector(34.1f, 5.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(18.1f, 11.1f, -20.0f) * mBackGroundMatrix, CVector(), CVector(50.1f, 10.1f, 5.1f));
 	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
 	
