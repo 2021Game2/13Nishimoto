@@ -87,11 +87,33 @@ void CSceneGame::Init() {
 	new CEnemy(&mCube, CVector(18.1f, 11.1f, -20.0f) * mBackGroundMatrix, CVector(), CVector(50.1f, 10.1f, 5.1f));
 	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
+
+	new CEnemy(&mCube, CVector(-18.1f, 1.1f, 30.0f) * mBackGroundMatrix, CVector(), CVector(12.1f, 5.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(18.1f, 1.1f, 30.0f) * mBackGroundMatrix, CVector(), CVector(12.1f, 5.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(1.0f, 11.1f, 30.0f) * mBackGroundMatrix, CVector(), CVector(32.1f, 15.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+
+	new CEnemy(&mCube, CVector(1.1f, 1.1f, 90.0f) * mBackGroundMatrix, CVector(), CVector(20.1f, 5.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(1.0f, 11.1f, 90.0f) * mBackGroundMatrix, CVector(), CVector(32.1f, 15.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 	
 
-	
+	new CEnemy(&mCube, CVector(-18.1f, 1.1f, 140.0f) * mBackGroundMatrix, CVector(), CVector(12.1f, 5.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
 
-	
+	new CEnemy(&mCube, CVector(18.1f, 1.1f, 140.0f) * mBackGroundMatrix, CVector(), CVector(12.1f, 5.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
+	new CEnemy(&mCube, CVector(1.0f, 11.1f, 140.0f) * mBackGroundMatrix, CVector(), CVector(32.1f, 15.1f, 5.1f));
+	new CEnemy(&mCube, CVector(30.0f, 0.0f, 130.0f) * mBackGroundMatrix, CVector(), CVector(1.1f, 10.1f, 1.1f));
+
 
 	//new CEnemy(&mModelC5, CVector(0.0f, 10.0f, -600.0f), CVector(), CVector(0.1f, 0.1f, 0.1f));
 	//new CEnemy(&mModelC5, CVector(30.0f, 10.0f, -630.0f), CVector(), CVector(0.1f, 0.1f, 0.1f));
